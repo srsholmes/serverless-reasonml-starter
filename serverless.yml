@@ -1,0 +1,22 @@
+service: aws-lambda-starter
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+plugins:
+  - serverless-offline
+
+functions:
+  hello:
+    handler: src/hello.js
+    events:
+      - http:
+          path: hello
+          method: get
+  asyncFunc:
+    handler: lib/index.asyncFunc
+    events:
+      - http:
+          path: async
+          method: get

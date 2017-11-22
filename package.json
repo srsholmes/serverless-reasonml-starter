@@ -1,0 +1,21 @@
+{
+  "name": "serverless-aws-lambda-starter",
+  "version": "0.0.1",
+  "description": "Get started with serverless and AWS lambda",
+  "scripts": {
+    "build": "bsb -make-world",
+    "postinstall": "sh symlink.sh",
+    "start": "bsb -make-world -w",
+    "clean": "bsb -clean-world",
+    "offline": "serverless offline start",
+    "test": "TEST=environment nyc --check-coverage --lines 100 --functions 100 --branches 100 node ./test/harness ./test/{,**/}*.spec.js && npm run report"
+  },
+  "dependencies": {
+    "serverless": "^1.24.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.15.3"
+  },
+  "author": "Simon Holmes",
+  "license": "ISC"
+}

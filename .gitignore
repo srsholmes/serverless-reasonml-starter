@@ -1,0 +1,17 @@
+# package directories
+node_modules
+.idea
+jspm_packages
+lib
+.nyc_output
+.merlin
+.bsb.lock
+npm-debug.log
+/lib/bs/
+/node_modules/
+
+.history
+
+
+# Serverless directories
+.serverless
