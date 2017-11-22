@@ -10,7 +10,6 @@ function hello(_, _$1, cb) {
       message: "Hello Body"
     }
   };
-  console.log("*****************");
   return Curry._2(cb, null, tester);
 }
 
